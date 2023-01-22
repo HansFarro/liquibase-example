@@ -5,7 +5,7 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
     
-    <changeSet id="Creating Media" author="ingimar">
+    <changeSet id="Creating Media" author="hans">
         <createTable tableName="MEDIA">
             <column name="UUID" type="varchar(255)" autoIncrement="false">
                 <constraints primaryKey="true" nullable="false"/>
@@ -20,7 +20,7 @@
         </createTable>
     </changeSet>
     
-    <changeSet id="Creating Image" author="ingimar">
+    <changeSet id="Creating Image" author="hans">
         <createTable tableName="IMAGE">
             <column name="UUID" type="varchar(255)"  autoIncrement="false">
                 <constraints primaryKey="true" nullable="false"/>
@@ -33,7 +33,7 @@
         />
     </changeSet>  
     
-    <changeSet id="Admin-Config" author="ingimar">
+    <changeSet id="Admin-Config" author="hans">
         <createTable tableName="ADMIN_CONFIG">
             <column name="ID" type="int" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
@@ -43,13 +43,13 @@
             <column name="admin_value" type="varchar(255)"/>
         </createTable>
     </changeSet>
-    <changeSet id="Media - altering - adding RESTFUL_STREAM" author="ingimar">
+    <changeSet id="Media - altering - adding RESTFUL_STREAM" author="hans">
         <addColumn tableName="MEDIA">
             <column name="RESTFUL_STREAM" type="varchar(255)"/>
         </addColumn>
     </changeSet>
     
-    <changeSet id="Creating Test_Table" author="ingimar">
+    <changeSet id="Creating Test_Table" author="hans">
         <createTable tableName="TEST">
             <column name="UUID" type="varchar(255)" autoIncrement="false">
                 <constraints primaryKey="true" nullable="false"/>
